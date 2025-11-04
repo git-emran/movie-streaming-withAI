@@ -10,7 +10,7 @@ type Genre struct {
 }
 
 type Ranking struct {
-	RankingValue int `bson:"ranking_value" json:"ranking_value" validate:"oneof=Excellent Good Okay Bad Terrible"`
+	RankingValue int `bson:"ranking_value" json:"ranking_value" validate:"required"`
 	RankingName  string
 }
 
